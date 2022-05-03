@@ -1,20 +1,27 @@
 # All unpinned blobs below are extracted from miui_HAYDNGlobal_V13.0.1.0.SKKMIXM
 
 -system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Snap,Camera2,GoogleCameraGo
+system/lib/libcameraservice.so
+system/lib64/libcom.xiaomi.camera.mianodejni.so
+system/lib64/libcom.xiaomi.camera.mianodejni.so
+system/lib64/libcom.xiaomi.camera.requestutil.so
+system/lib64/libDocumentProcess.so
+system/lib64/libfenshen_snpe.so
+system/lib64/libffmpeg.so
+system/lib64/libjni_jpegutil_xiaomi.so
+system/lib64/libmimoji_avatarengine.so
+system/lib64/libmimoji_bokeh_845_video.so
+system/lib64/libmimoji_jni.so
+system/lib64/libmimoji_soundsupport.so
+system/lib64/libmimoji_tracking.so
+system/lib64/libmimoji_video2gif.so
+system/lib64/libmulti-wakeup-engine.so
+system/lib64/librecord_video.so
 system/lib64/android.hardware.camera.common@1.0.so
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libcameraservice.so
-system/lib64/libdoc_photo.so
-system/lib64/libdoc_photo_c++_shared.so
 system/lib64/libhidltransport.so
-system/lib64/libmicampostproc_client.so
 system/lib64/libmotion_photo.so
-system/lib64/libmotion_photo_c++_shared.so
 system/lib64/libmotion_photo_mace.so
-system/lib64/libopencl-camera.so
 system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-system_ext/lib64/libcameraimpl.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so

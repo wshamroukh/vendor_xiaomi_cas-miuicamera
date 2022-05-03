@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/star-miuicamera/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/cmi-miuicamera/sepolicy/vendor
 
-include vendor/xiaomi/star-miuicamera/common/BoardConfigVendor.mk
+include vendor/xiaomi/cmi-miuicamera/common/BoardConfigVendor.mk

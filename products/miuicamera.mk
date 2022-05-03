@@ -16,15 +16,15 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/star-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/star-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/cmi-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/cmi-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/star-miuicamera/configs/ANXCamera/anx.js:$(TARGET_COPY_OUT_SYSTEM)/etc/ANXCamera/anx.js
+    vendor/xiaomi/cmi-miuicamera/configs/ANXCamera/anx.js:$(TARGET_COPY_OUT_SYSTEM)/etc/ANXCamera/anx.js
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/star-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
+    vendor/xiaomi/cmi-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -33,6 +33,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
-    vendor.camera.aux.packagelist=com.android.camera
+    vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 
-$(call inherit-product, vendor/xiaomi/star-miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/cmi-miuicamera/common/common-vendor.mk)
