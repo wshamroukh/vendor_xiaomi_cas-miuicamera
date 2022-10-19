@@ -32,6 +32,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.hardware.camera=xiaomi
 
 PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=cmi_global \
+    ro.miui.notch=1 \
     persist.vendor.camera.privapp.list=com.android.camera \
     vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 

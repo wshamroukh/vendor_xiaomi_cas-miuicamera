@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libanx.config.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libanx.config.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libanx.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libanx.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libDocumentProcess.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDocumentProcess.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcameraservice.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libcom.xiaomi.camera.mianodejni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcom.xiaomi.camera.mianodejni.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libcom.xiaomi.camera.requestutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcom.xiaomi.camera.requestutil.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libfenshen_snpe.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfenshen_snpe.so \
@@ -28,7 +29,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libmulti-wakeup-engine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmulti-wakeup-engine.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/librecord_video.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librecord_video.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.campostproc@1.0.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@2.0.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@3.5.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
@@ -38,7 +42,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/camera.device@3.5-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-external-impl.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libarcmulticamsat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcmulticamsat.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libarcsat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsat.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libflaw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflaw.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libmulticam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_optical_zoom_control.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/libsupermoon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsupermoon.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@2.0.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 PRODUCT_PACKAGES += \
