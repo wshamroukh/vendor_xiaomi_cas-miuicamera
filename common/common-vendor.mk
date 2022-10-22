@@ -8,8 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcameraservice.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.camera.common@1.0.so \
-    vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libanx.config.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libanx.config.so \
-    vendor/xiaomi/cmi-miuicamera/common/proprietary/system/priv-app/MiuiCamera/lib/arm64/libanx.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64/libanx.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libDocumentProcess.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDocumentProcess.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcameraservice.so \
     vendor/xiaomi/cmi-miuicamera/common/proprietary/system/lib64/libcom.xiaomi.camera.mianodejni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcom.xiaomi.camera.mianodejni.so \
