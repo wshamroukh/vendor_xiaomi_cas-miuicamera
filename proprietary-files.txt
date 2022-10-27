@@ -1,44 +1,28 @@
-# All unpinned blobs below are extracted from miui_CMI_V13.0.4.0.SJACNXM
+# All unpinned blobs below are extracted from miui_CAS_V13.0.5.0.SJJCNXM
 
-# System-files
+# system
 -system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Snap,Camera2,GoogleCameraGo,Aperture
-system/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so
-system/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so
-system/lib/libcameraservice.so
-system/lib64/libcom.xiaomi.camera.mianodejni.so
-system/lib64/libcom.xiaomi.camera.mianodejni.so
-system/lib64/libcom.xiaomi.camera.requestutil.so
-system/lib64/libDocumentProcess.so
-system/lib64/libfenshen_snpe.so
-system/lib64/libffmpeg.so
-system/lib64/libjni_jpegutil_xiaomi.so
-system/lib64/libmimoji_avatarengine.so
-system/lib64/libmimoji_bokeh_845_video.so
-system/lib64/libmimoji_jni.so
-system/lib64/libmimoji_soundsupport.so
-system/lib64/libmimoji_tracking.so
-system/lib64/libmimoji_video2gif.so
-system/lib64/libmulti-wakeup-engine.so
-system/lib64/librecord_video.so
 system/lib64/android.hardware.camera.common@1.0.so
+system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libdoc_photo_c++_shared.so
+system/lib64/libdoc_photo.so
 system/lib64/libhidltransport.so
-system/lib64/libmotion_photo.so
+system/lib64/libmotion_photo_c++_shared.so
 system/lib64/libmotion_photo_mace.so
-system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+system/lib64/libmotion_photo.so
+system/lib64/libopencl-camera.so
 
-# System-files - from miui_STAR_V13.0.13.0.SKACNXM
-system/lib64/libcameraservice.so
+# system - from miui_STAR_V13.0.13.0.SKACNXM
+system/lib64/libcameraservice.so|69639b4d2eaa00e27388221299322803a4bf3e5b
 
-# Vendor-files
+# system_ext
+system_ext/lib64/libcameraimpl.so
+
+# vendor
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@2.0.so
 vendor/lib/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib64/libsupermoon.so
-vendor/lib64/libmulticam_optical_zoom_control.so
-vendor/lib64/libflaw.so
-vendor/lib64/libarcsat.so
-vendor/lib64/libarcmulticamsat.so
-vendor/lib64/libalCFR.so
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
@@ -47,6 +31,32 @@ vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/camera.device@3.5-external-impl.so
 vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/camera.device@3.6-external-impl.so
+vendor/lib64/libalCFR.so
+vendor/lib64/libarcmulticamsat.so
+vendor/lib64/libarcsat.so
+vendor/lib64/libcamera_dirty.so
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libcamera_scene_cen.so
+vendor/lib64/libcamera_scene_dxo.so
+vendor/lib64/libcamera_scene.so
+vendor/lib64/libcamerapostproc.so
+vendor/lib64/libFaceDetLmd.so
+vendor/lib64/libflaw.so
+vendor/lib64/libmiai_deblur.so
+vendor/lib64/libmiai_portraitsupernight.so
+vendor/lib64/libMIAIHDRhvx_interface.so
+vendor/lib64/libmiphone_bokeh_depth.so
+vendor/lib64/libmiphone_bokeh_effect.so
+vendor/lib64/libmiphone_bokeh_gpf.so
+vendor/lib64/libmiphone_bokeh_proc.so
+vendor/lib64/libmiphone_bokeh_rectify.so
+vendor/lib64/libmiStereoFactoryRemapLib.so
+vendor/lib64/libmorpho_HDSR.so
+vendor/lib64/libmulticam_optical_zoom_control.so
+vendor/lib64/libsupermoon.so
+vendor/lib64/libwa_opticalzoom_fusion.so
+vendor/lib64/libwa_opticalzoomfactor.so
+vendor/lib64/libwa_sat.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@2.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@3.5.so

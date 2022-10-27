@@ -16,12 +16,12 @@
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/cmi-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/cmi-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/cas-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/cas-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/cmi-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
+    vendor/xiaomi/cas-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -29,9 +29,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	ro.hardware.camera=xiaomi
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.product.mod_device=cmi_global \
+    ro.product.mod_device=cas_global \
     ro.miui.notch=1 \
     persist.vendor.camera.privapp.list=com.android.camera \
     vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 
-$(call inherit-product, vendor/xiaomi/cmi-miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/cas-miuicamera/common/common-vendor.mk)
