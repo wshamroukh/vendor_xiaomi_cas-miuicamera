@@ -34,4 +34,5 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
     vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
 
+$(call inherit-product, vendor/xiaomi/cas-miuicamera/products/board.mk)
 $(call inherit-product, vendor/xiaomi/cas-miuicamera/common/common-vendor.mk)
