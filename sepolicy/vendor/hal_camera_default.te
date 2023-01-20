@@ -1,4 +1,4 @@
-get_prop(hal_camera_default, vendor_fp_prop)
+get_prop(hal_camera_default, vendor_fingerprint_prop)
 
 add_hwservice(hal_camera_default, hal_camerapostproc_xiaomi_hwservice)
 
