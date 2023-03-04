@@ -1,4 +1,4 @@
-get_prop(hal_camera_default, vendor_fingerprint_prop)
+get_prop(hal_camera_default, vendor_fp_prop)
 
 add_hwservice(hal_camera_default, hal_camerapostproc_xiaomi_hwservice)
 
@@ -6,4 +6,5 @@ binder_call(hal_camera_default, platform_app)
 
 allow hal_camera_default mnt_vendor_file:dir { search };
 allow hal_camera_default proc_stat:file { open read };
-allow hal_camera_default vendor_xdsp_device:chr_file { read };
+allow hal_camera_default vendor_xdsp_device:chr_file { read ioctl };
+#get_prop(hal_camera_default, default_prop);
