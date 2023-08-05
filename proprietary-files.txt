@@ -13,9 +13,6 @@ system/lib64/libmotion_photo_mace.so
 system/lib64/libmotion_photo.so
 system/lib64/libopencl-camera.so
 
-# system - from miui_STAR_V13.0.13.0.SKACNXM
-system/lib64/libcameraservice.so|69639b4d2eaa00e27388221299322803a4bf3e5b
-
 # system_ext
 system_ext/lib64/libcameraimpl.so
 
