@@ -1,3 +1,4 @@
+*.apk filter=lfs diff=lfs merge=lfs -text
 common/proprietary/system/priv-app/MiuiEditor/MiuiEditor.apk filter=lfs diff=lfs merge=lfs -text
 common/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk filter=lfs diff=lfs merge=lfs -text
 common/proprietary/system/priv-app/MiuiGallery/MiuiGallery.apk filter=lfs diff=lfs merge=lfs -text
