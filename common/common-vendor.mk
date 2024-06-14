@@ -65,4 +65,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MiuiCamera \
     MiuiGallery \
+    MiuiEditor \
+    MiDocViewer \
 	MiuiVideo
