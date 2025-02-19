@@ -32,8 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/camera.device@3.6-external-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.6-external-impl.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl.so \
-    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libFaceDetLmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceDetLmd.so \
-    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libMIAIHDRhvx_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMIAIHDRhvx_interface.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libarcmulticamsat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcmulticamsat.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libarcsat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsat.so \
@@ -43,15 +41,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libcamera_scene_cen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene_cen.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libcamera_scene_dxo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene_dxo.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libFaceDetLmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceDetLmd.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libflaw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflaw.so \
-    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiStereoFactoryRemapLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapLib.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiai_deblur.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_deblur.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiai_portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_portraitsupernight.so \
+    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libMIAIHDRhvx_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMIAIHDRhvx_interface.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiphone_bokeh_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_bokeh_depth.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiphone_bokeh_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_bokeh_effect.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiphone_bokeh_gpf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_bokeh_gpf.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiphone_bokeh_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_bokeh_proc.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiphone_bokeh_rectify.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_bokeh_rectify.so \
+    vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmiStereoFactoryRemapLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapLib.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmorpho_HDSR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_HDSR.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libmulticam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_optical_zoom_control.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/libsupermoon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsupermoon.so \
@@ -63,8 +63,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 PRODUCT_PACKAGES += \
-    MiuiCamera \
-    MiuiGallery \
-    MiuiEditor \
     MiDocViewer \
+    MiuiCamera \
+    MiuiEditor \
+    MiuiGallery \
     MiuiVideo
