@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cas-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so
 
 PRODUCT_PACKAGES += \
+    libgui_shim_miuicamera \
     MiDocViewer \
     MiuiCamera \
     MiuiEditor \
