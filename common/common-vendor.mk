@@ -68,4 +68,5 @@ PRODUCT_PACKAGES += \
     MiDocViewer \
     MiuiCamera \
     MiuiEditor \
-    MiuiGallery
+    MiuiGallery \
+    MiuiVideo
