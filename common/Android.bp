@@ -39,3 +39,13 @@ android_app_import {
         },
         product_specific: true,
 }
+
+android_app_import {
+        name: "MiDocViewer",
+        apk: "proprietary/system/priv-app/MiDocViewer/MiDocViewer.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        product_specific: true,
+}
