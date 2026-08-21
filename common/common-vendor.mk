@@ -65,8 +65,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libgui_shim_miuicamera \
-    MiDocViewer \
     MiuiCamera \
     MiuiEditor \
-    MiuiGallery \
-    MiuiVideo
+    MiuiGallery
