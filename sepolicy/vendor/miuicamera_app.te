@@ -1,4 +1,4 @@
-type miuicamera_app, domain, coredomain;
+type miuicamera_app, domain;
 
 app_domain(miuicamera_app)
 net_domain(miuicamera_app)
