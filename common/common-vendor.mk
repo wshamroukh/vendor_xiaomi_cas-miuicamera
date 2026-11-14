@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_algoup_jni.xiaomi.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_mianode_jni.xiaomi.so \
+    vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libcamera_jpegutil_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_jpegutil_jni.xiaomi.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libdoc_photo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdoc_photo.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libdoc_photo_c++_shared.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdoc_photo_c++_shared.so \
     vendor/xiaomi/cas-miuicamera/common/proprietary/system/lib64/libmotion_photo.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmotion_photo.so \
