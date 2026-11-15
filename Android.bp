@@ -1,0 +1,177 @@
+// Stock Xiaomi camera provider/device HALs. These replace the AOSP source
+// modules of the same name (prefer: true). The AOSP device layer breaks MIUI
+// front video (SelfieEIS GPU node fails to import encoder buffers: mmap EINVAL).
+// Kept outside a soong_namespace so prebuilt replacement can see the source modules.
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.camera.provider@2.4-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    relative_install_path: "hw",
+    compile_multilib: "both",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so"] },
+        arm: { srcs: ["common/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.camera.provider@2.4-legacy",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "both",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so"] },
+        arm: { srcs: ["common/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@1.0-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@1.0-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.2-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.2-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.3-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.3-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.4-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.4-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.5-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.5-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.4-external-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.4-external-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.5-external-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.5-external-impl.so"] },
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.device@3.6-external-impl",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: {
+        arm64: { srcs: ["common/proprietary/vendor/lib64/camera.device@3.6-external-impl.so"] },
+    },
+}
+
+// Stock Xiaomi 64-bit gralloc libs. The source libgralloccore/libgrallocutils
+// cause a one-frame red border around the screen when the FOD HBM overlay
+// appears (fingerprint unlock). 32-bit stays source-built.
+cc_prebuilt_library_shared {
+    name: "libgralloccore",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: { arm64: { srcs: ["common/proprietary/vendor/lib64/libgralloccore.so"] } },
+}
+
+cc_prebuilt_library_shared {
+    name: "libgrallocutils",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: { arm64: { srcs: ["common/proprietary/vendor/lib64/libgrallocutils.so"] } },
+}
+
+// AOSP external (USB) camera provider, 64-bit, built from source on 10-31 against
+// the AOSP device impls (same binary the ROM shipped before the dedupe). Needed by
+// the stock provider@2.4-impl. Prebuilt because it can't compile against the stock
+// device prebuilts (they don't export the AOSP headers). 32-bit stays source-built.
+cc_prebuilt_library_shared {
+    name: "android.hardware.camera.provider@2.4-external",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    compile_multilib: "64",
+    arch: { arm64: { srcs: ["common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so"] } },
+}
