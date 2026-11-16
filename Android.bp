@@ -175,3 +175,20 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     arch: { arm64: { srcs: ["common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-external.so"] } },
 }
+
+// Stock Xiaomi audio HAL under its original name. sound_trigger.primary.kona
+// builds "audio.primary.<ro.board.platform>.so" and fails if the HAL is renamed.
+cc_prebuilt_library_shared {
+    name: "audio.primary.kona",
+    owner: "xiaomi",
+    vendor: true,
+    prefer: true,
+    check_elf_files: false,
+    strip: { none: true },
+    relative_install_path: "hw",
+    compile_multilib: "both",
+    arch: {
+        arm: { srcs: ["common/proprietary/vendor/lib/hw/audio.primary.kona.so"] },
+        arm64: { srcs: ["common/proprietary/vendor/lib64/hw/audio.primary.kona.so"] },
+    },
+}
